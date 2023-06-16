@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_5_rectangulo.MainPage">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image Source="rectangulo.png"  HeightRequest="200"/>
+            <Entry x:Name="Base" Placeholder="Introduce la base del rectángulo" Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium"/>
+            <Entry x:Name="Altura" Placeholder="Introduce la altura del rectángulo" Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium"/>
+            <Button x:Name="Calcular" Text="Calcular" Clicked="OnButtonClicked" Margin="10, 10, 10, 10" BorderColor="Purple" BorderWidth="3" FontFamily="Centhry Gothic" FontSize="Medium" BackgroundColor="Bisque"/>
+            <Label Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium">El área del rectángulo es:</Label>
+            <Entry x:Name="AreaFinal" Placeholder="El área total es:" Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium" IsEnabled="False"/>
+            <Label Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium">El perimetro del rectángulo es:</Label>
+            <Entry x:Name="PerimetroFinal" Placeholder="El perimetro es:" Margin="10, 10, 10, 10" FontFamily="Centhry Gothic" FontSize="Medium" IsEnabled="False"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
